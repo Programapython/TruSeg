@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TruSeg | Seguridad vehicular en Trujillo</title>
+  <meta name="description" content="TruSeg: venta, instalación y mantenimiento de sistemas de seguridad para vehículos en Trujillo." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img class="logo_header" src="logo.jpg" alt="Logo de TruSeg" />
+        <h1>TruSeg</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto" class="cta">Cotiza ahora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="container wrap">
+        <div>
+          <h2>Seguridad vehicular confiable</h2>
+          <p>Protege tu vehículo con alarmas, GPS e inmovilizadores. Servicio integral en Trujillo.</p>
+          <div class="actions">
+            <a id="btnWhatsApp" class="btn btn-primary">Cotizar por WhatsApp</a>
+            <a class="btn btn-outline" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+        <div>
+          <img src="auto.jpg" alt="Auto con sistema de seguridad" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Secciones de servicios, productos, proceso, contacto -->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <h3>Contáctanos</h3>
+        <form id="formContacto">
+          <input id="nombre" type="text" placeholder="Tu nombre" required />
+          <input id="telefono" type="tel" placeholder="+51 9XX XXX XXX" required />
+          <select id="servicio" required>
+            <option value="">Selecciona un servicio</option>
+            <option>Alarma vehicular</option>
+            <option>Rastreo GPS</option>
+            <option>Inmovilizador</option>
+          </select>
+          <textarea id="mensaje" placeholder="Cuéntanos qué necesitas"></textarea>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> TruSeg. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
